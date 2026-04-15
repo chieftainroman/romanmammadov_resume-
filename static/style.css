@@ -109,3 +109,120 @@ nav {
     background: var(--accent);
     color: var(--bg);
 }
+
+
+.hero {
+  padding: 5rem 3rem 3rem;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+}
+.hero-tag {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-name {
+  font-family: var(--font-d);
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.hero-name .line2 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+}
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero-left {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.photo-box {
+  width: 180px;
+  height: 220px;
+  border: 1px solid var(--border-hi);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ph-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ph-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--muted);
+}
+
+.ph-label {
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ph-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 28px 28px;
+  border-color: transparent transparent var(--accent) transparent;
+}
+
+.hero-bio {
+  max-width: 220px;
+  text-align: right;
+  font-family: var(--font-m);
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
