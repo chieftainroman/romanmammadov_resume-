@@ -165,8 +165,8 @@ nav {
 }
 
 .photo-box {
-  width: 180px;
-  height: 220px;
+  width: 260px;
+  height: 320px;
   border: 1px solid var(--border-hi);
   background: var(--card);
   display: flex;
@@ -174,6 +174,13 @@ nav {
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .photo-placeholder {
@@ -562,4 +569,37 @@ nav {
   letter-spacing: 0.08em;
   color: var(--muted);
   white-space: nowrap;
+}
+
+footer {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+}
+
+.footer-left {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-right a {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.footer-right a:hover {
+  color: var(--accent);
 }
