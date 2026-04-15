@@ -504,3 +504,62 @@ nav {
 .project-card:hover .project-link {
   gap: 0.75rem;
 }
+
+.awards-section {
+  padding: 5rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.awards-left h2 {
+  font-family: var(--font-d);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.award-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.award-row:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.award-name {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  flex: 1;
+}
+
+.award-place {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.award-year {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  white-space: nowrap;
+}
