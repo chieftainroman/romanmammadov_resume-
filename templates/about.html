@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Mammadov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        html, body {
+            overflow: hidden;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <span>~/</span>roman.dev
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+{% comment %}         <a href="mailto:roman.mammadov@my.liu.edu" class="nav-cta">
+            Contact
+        </a> {% endcomment %}
+    </nav>
+    <div id="scenes">
+        <section class = "about-hero scene">
+            <div class="about-hero-top ">
+                <div class="about-index">001 - About</div>
+                <div class="about-status">
+                    <span class="status-dot"></span>
+                    Open to opportunities
+                </div>
+            </div>
+            <div class="about-hero-name" id="heroName">
+                <h1>ABOUT</h1>
+                <h1 class="outline">ROMAN.</h1>
+            </div>
+
+            <div class="about-hero-bottom">
+                <p class="about-hero-desc">
+                Developer. Founder. Student. From
+                <em>Baku, Azerbaijan</em> to <em>Brooklyn, NY</em> —
+                building products that ship, winning competitions,
+                and figuring out what's next.
+                </p>
+                <div class="about-scroll-hint">
+                <span class="scroll-line"></span>
+                Scroll to explore
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="story-section scene">
+
+            <div class="story-image-col" id="storyImg">
+                <img src="../assets/coding14.png" alt="Roman at 14, coding in Baku" />
+                <div class="story-image-label">Baku, 2018 — Age 14</div>
+            </div>
+
+            <div class="story-content-col">
+                <div class="story-number" id="storyNum">01</div>
+                <div class="section-label">My Story</div>
+                <p class="story-text" id="storyText">
+                Started writing code at <em>14 in Baku</em>, competing
+                in science fairs before most people knew what a hackathon
+                was. Co-founded <em>Wogether</em> — digital tools for
+                people with autism — presented to investors, won
+                <em>1st place at INTOC Global</em> among 180 finalists
+                from 21 countries. Moved to <em>Brooklyn</em> to study
+                CS at LIU. Still building.
+                </p>
+            </div>
+
+        </section>
+    
+        <section class="exp-section scene">
+
+            <div class="exp-header">
+                <div class="exp-header-left">
+                <div class="section-label">Experience</div>
+                <h2 class="exp-title">Where I<br/>Worked</h2>
+                </div>
+                <div class="exp-header-right">
+                <div class="exp-meta">02 positions</div>
+                <div class="exp-meta">2020 — 2022</div>
+                <div class="exp-meta">Baku, Azerbaijan</div>
+                </div>
+            </div>
+
+            <div class="exp-body">
+
+                <div class="exp-card">
+                <div class="exp-photo-wrap" id="expPhoto">
+                    <img src="../assets/icp.png" alt="Presenting Wogether to investors" />
+                    <div class="exp-photo-overlay"></div>
+                    <div class="exp-photo-caption">
+                    <div class="exp-caption-date">May 2021 — Jan 2022</div>
+                    <div class="exp-caption-role">Founder & Team Lead</div>
+                    <div class="exp-caption-co">
+                        Wogether · Presenting to ICD investors
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="exp-card">
+                <div class="exp-job" id="expCard1">
+                    <div class="exp-date">Nov 2020 — Jun 2022 · Baku</div>
+                    <div class="exp-role">Web Developer</div>
+                    <div class="exp-company">SUMbuilders</div>
+                    <ul class="exp-points">
+                    <li>Built and maintained websites using HTML, CSS, Python/Django</li>
+                    <li>Competed in global and national hackathons</li>
+                    <li>Founded Wogether startup during this period</li>
+                    </ul>
+                </div>
+
+                <div class="exp-job" id="expCard2">
+                    <div class="exp-date">May 2021 — Jan 2022 · Baku</div>
+                    <div class="exp-role">Founder & Team Lead</div>
+                    <div class="exp-company">Wogether</div>
+                    <ul class="exp-points">
+                    <li>Led development of MVP, delivered on time</li>
+                    <li>Pitched to investors at ICD Private Sector</li>
+                    <li>Won 1st place at INTOC Global — 21 countries</li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+    
+    
+    
+        <section class="about-proj-section scene">
+
+            <div class="about-proj-header">
+                <h2 class="about-proj-title">Projects</h2>
+                <span class="about-proj-count">04 shipped</span>
+            </div>
+
+            <div class="about-proj-grid">
+
+                <div class="about-proj-item" id="pc1">
+                <div class="about-proj-num">01</div>
+                <div class="about-proj-left">
+                    <div class="about-proj-name">VPN Bot in Telegram</div>
+                    <p class="about-proj-desc">
+                    Automated VPN service bot with subscription management,
+                    secure payment processing, and server-side config delivery.
+                    Built for real users with a full admin panel.
+                    </p>
+                </div>
+                <div class="about-proj-right">
+                    <div class="about-proj-tags">
+                    <span class="about-proj-tag">Python</span>
+                    <span class="about-proj-tag">Aiogram</span>
+                    <span class="about-proj-tag">Payment API</span>
+                    <span class="about-proj-tag">Admin Panel</span>
+                    </div>
+                    <a href="https://github.com/chieftainroman/vpn_bot"
+                    target="_blank"
+                    class="about-proj-link">
+                    GitHub →
+                    </a>
+                </div>
+                </div>
+
+                <div class="about-proj-item" id="pc2">
+                <div class="about-proj-num">02</div>
+                <div class="about-proj-left">
+                    <div class="about-proj-name">Coffee & Tea E-commerce</div>
+                    <p class="about-proj-desc">
+                    Full e-commerce platform independently built and deployed
+                    on AWS — product catalog, shopping cart, auth, payment
+                    gateway, admin panel and PostgreSQL backend.
+                    </p>
+                </div>
+                <div class="about-proj-right">
+                    <div class="about-proj-tags">
+                    <span class="about-proj-tag">Django</span>
+                    <span class="about-proj-tag">PostgreSQL</span>
+                    <span class="about-proj-tag">AWS Lightsail</span>
+                    <span class="about-proj-tag">Payment API</span>
+                    </div>
+                    <a href="https://github.com/chieftainroman/Carnival/tree/main"
+                    target="_blank"
+                    class="about-proj-link">
+                    GitHub →
+                    </a>
+                </div>
+                </div>
+
+                <div class="about-proj-item" id="pc3">
+                <div class="about-proj-num">03</div>
+                <div class="about-proj-left">
+                    <div class="about-proj-name">DermaLens</div>
+                    <p class="about-proj-desc">
+                    AI tool for skin health guidance. CNN model classifies
+                    skin conditions, Grad-CAM heatmap shows where the model
+                    is looking, and an LLM explains the result in plain
+                    language. Triage only — not a medical diagnosis.
+                    </p>
+                </div>
+                <div class="about-proj-right">
+                    <div class="about-proj-tags">
+                    <span class="about-proj-tag">Python</span>
+                    <span class="about-proj-tag">CNN</span>
+                    <span class="about-proj-tag">Grad-CAM</span>
+                    <span class="about-proj-tag">LLM</span>
+                    </div>
+                    <a href="https://github.com/chieftainroman"
+                    target="_blank"
+                    class="about-proj-link">
+                    GitHub →
+                    </a>
+                </div>
+                </div>
+
+                <div class="about-proj-item" id="pc4">
+                <div class="about-proj-num">04</div>
+                <div class="about-proj-left">
+                    <div class="about-proj-name">Censor System AI</div>
+                    <p class="about-proj-desc">
+                    My first AI project. Detects and censors offensive words
+                    in English text. Runs entirely in the terminal. Training
+                    data sourced from Kaggle. The project that started the
+                    AI path.
+                    </p>
+                </div>
+                <div class="about-proj-right">
+                    <div class="about-proj-tags">
+                    <span class="about-proj-tag">Python</span>
+                    <span class="about-proj-tag">NLP</span>
+                    <span class="about-proj-tag">Kaggle</span>
+                    <span class="about-proj-tag">Terminal</span>
+                    </div>
+                    <a href="https://github.com/chieftainroman"
+                    target="_blank"
+                    class="about-proj-link">
+                    GitHub →
+                    </a>
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+    
+
+
+    
+        <section class="edu-section scene">
+
+  <div class="edu-left" id="eduLeft">
+    <div class="murzik-wrap">
+      <img src="../assets/murzik.png" alt="Murzik the cat" />
+      <div class="murzik-label">Murzik — Chief of operations</div>
+    </div>
+  </div>
+
+  <div class="edu-right" id="eduRight">
+
+    <div class="section-label">Education</div>
+    <div class="edu-degree">B.S. Computer<br/>Science</div>
+    <div class="edu-school">
+      Long Island University Brooklyn<br/>
+      Brooklyn, NY<br/>
+      Expected May 2028<br/>
+      Google Developers Club
+    </div>
+
+    <div class="section-label" style="margin-top: 0.75rem;">Details</div>
+
+    <div class="edu-extras">
+      <div class="edu-row">
+        <span class="edu-key">Languages</span>
+        <span class="edu-val">English · Russian · Azerbaijani</span>
+      </div>
+      <div class="edu-row">
+        <span class="edu-key">Club</span>
+        <span class="edu-val">Google Developers Club @ LIU</span>
+      </div>
+      <div class="edu-row">
+        <span class="edu-key">Based</span>
+        <span class="edu-val">Brooklyn, New York</span>
+      </div>
+      <div class="edu-row">
+        <span class="edu-key">Status</span>
+        <span class="edu-val edu-val-accent">Open to opportunities</span>
+      </div>
+      <div class="edu-row">
+        <span class="edu-key">Cat</span>
+        <span class="edu-val">Murzik (very important)</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    </div>
+
+
+
+
+
+    <footer>
+
+        <div class="footer-left">
+            © 2025 Roman Mammadov · Brooklyn, NY
+        </div>
+
+        <div class="footer-right">
+            <a href="https://github.com/chieftainroman" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/roman-mammadov-a68628208" target="_blank">LinkedIn</a>
+            <a href="mailto:roman.mammadov@my.liu.edu">Email</a>
+        </div>
+
+    </footer>
+    <script src="../static/script.js">
+    </script>
+<script>
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+  const ease = t => 1 - Math.pow(1 - t, 3);
+
+  const scenes = Array.from(document.querySelectorAll('.scene'));
+  let cur = 0;
+  let t = 0;
+
+  const animations = [
+
+    // HERO
+    (t) => {
+      const name = document.querySelector('.about-hero-name');
+      const top  = document.querySelector('.about-hero-top');
+      const bot  = document.querySelector('.about-hero-bottom');
+      const e    = ease(clamp(t * 3, 0, 1));
+      const e2   = ease(clamp((t - 0.2) * 3, 0, 1));
+      if (name) {
+        name.style.opacity   = lerp(0, 1, e);
+        name.style.transform = `perspective(900px) rotateX(${lerp(25, 0, e)}deg) translateY(${lerp(30, 0, e)}px)`;
+      }
+      if (top) {
+        top.style.opacity   = lerp(0, 1, e);
+        top.style.transform = `translateY(${lerp(-20, 0, e)}px)`;
+      }
+      if (bot) {
+        bot.style.opacity   = lerp(0, 1, e2);
+        bot.style.transform = `translateY(${lerp(20, 0, e2)}px)`;
+      }
+    },
+
+    // STORY
+    (t) => {
+      const img  = document.querySelector('.story-image-col');
+      const text = document.querySelector('.story-text');
+      const num  = document.querySelector('.story-number');
+      const e1   = ease(clamp(t * 3, 0, 1));
+      const e2   = ease(clamp((t - 0.2) * 3, 0, 1));
+      if (img) {
+        img.style.opacity   = lerp(0, 1, e1);
+        img.style.transform = `translateX(${lerp(-80, 0, e1)}px)`;
+      }
+      if (text) {
+        text.style.opacity   = lerp(0, 1, e2);
+        text.style.transform = `perspective(800px) rotateX(${lerp(20, 0, e2)}deg)`;
+      }
+      if (num) {
+        num.style.opacity   = lerp(0, 0.35, e1);
+        num.style.transform = `translateY(${lerp(20, 0, e1)}px)`;
+      }
+    },
+
+    // EXPERIENCE
+    (t) => {
+      const photo = document.querySelector('.exp-photo-wrap');
+      const jobs  = document.querySelectorAll('.exp-job');
+      const title = document.querySelector('.exp-title');
+      const e1    = ease(clamp(t * 3, 0, 1));
+      const e2    = ease(clamp((t - 0.15) * 3, 0, 1));
+      const e3    = ease(clamp((t - 0.35) * 3, 0, 1));
+      if (photo) {
+        photo.style.opacity   = lerp(0, 1, e1);
+        photo.style.transform = `translateX(${lerp(-80, 0, e1)}px)`;
+      }
+      if (title) {
+        title.style.opacity   = lerp(0, 1, e1);
+        title.style.transform = `translateY(${lerp(20, 0, e1)}px)`;
+      }
+      if (jobs[0]) {
+        jobs[0].style.opacity   = lerp(0, 1, e2);
+        jobs[0].style.transform = `perspective(600px) rotateY(${lerp(25, 0, e2)}deg)`;
+      }
+      if (jobs[1]) {
+        jobs[1].style.opacity   = lerp(0, 1, e3);
+        jobs[1].style.transform = `perspective(600px) rotateY(${lerp(25, 0, e3)}deg)`;
+      }
+    },
+
+    // PROJECTS
+    (t) => {
+      const header = document.querySelector('.about-proj-header');
+      const items  = document.querySelectorAll('.about-proj-item');
+      const eh     = ease(clamp(t * 4, 0, 1));
+      if (header) {
+        header.style.opacity   = lerp(0, 1, eh);
+        header.style.transform = `translateY(${lerp(-15, 0, eh)}px)`;
+      }
+      items.forEach((item, i) => {
+        const e = ease(clamp((t - i * 0.1) * 4, 0, 1));
+        item.style.opacity   = lerp(0, 1, e);
+        item.style.transform = `perspective(600px) rotateX(${lerp(-18, 0, e)}deg) translateY(${lerp(25, 0, e)}px)`;
+      });
+    },
+
+    // EDUCATION
+    (t) => {
+      const left  = document.getElementById('eduLeft');
+      const right = document.getElementById('eduRight');
+      const e1    = ease(clamp(t * 3, 0, 1));
+      const e2    = ease(clamp((t - 0.2) * 3, 0, 1));
+      if (left) {
+        left.style.opacity   = lerp(0, 1, e1);
+        left.style.transform = `perspective(700px) rotateY(${lerp(20, 0, e1)}deg) translateX(${lerp(-30, 0, e1)}px)`;
+      }
+      if (right) {
+        right.style.opacity   = lerp(0, 1, e2);
+        right.style.transform = `perspective(700px) rotateY(${lerp(-20, 0, e2)}deg) translateX(${lerp(30, 0, e2)}px)`;
+      }
+    }
+  ];
+
+  function showScene(index) {
+    scenes.forEach((s, i) => s.classList.toggle('active', i === index));
+  }
+
+  function runAnim(index, progress) {
+    animations[index]?.(progress);
+  }
+
+  // Start at scene 0
+  showScene(0);
+  runAnim(0, 0);
+
+  window.addEventListener('wheel', (e) => {
+    e.preventDefault();
+
+    const delta = e.deltaY / 500;
+    t = clamp(t + delta, 0, 1);
+
+    runAnim(cur, t);
+
+    if (t >= 1 && cur < scenes.length - 1) {
+      cur++;
+      t = 0;
+      showScene(cur);
+      runAnim(cur, 0);
+    } else if (t <= 0 && cur > 0) {
+      cur--;
+      t = 1;
+      showScene(cur);
+      runAnim(cur, 1);
+    }
+  }, { passive: false });
+</script>
+</body>
+</html>
